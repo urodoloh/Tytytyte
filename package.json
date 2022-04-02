@@ -1,0 +1,27 @@
+{
+  "name": "kirill-sudy-1",
+  "version": "1.0.0",
+  "description": "The Timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qscgyjqscgyj/kirill-sudy-1.git"
+  },
+  "author": "urodoloh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qscgyjqscgyj/kirill-sudy-1/issues"
+  },
+  "homepage": "https://github.com/qscgyjqscgyj/kirill-sudy-1#readme",
+  "dependencies": {
+    "moment-timezone": "^0.5.34",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
