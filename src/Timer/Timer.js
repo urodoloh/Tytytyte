@@ -1,23 +1,31 @@
-import React, {useState, useEffect} from 'react';
-import moment from 'moment-timezone';
-import classes from './Timer.module.css'
+import React, {useState} from 'react';
+import MoscowTimer from './MoscowTimer';
+import MontenegroTimer from './MontenegroTimer';
+import UltraButton from '../TimerSwitch/UltraButton'
 
 const Timer = () => {
-    const moscowTime = moment().format('LTS');
-    const [time, setTime] = useState(moment().format('LTS'))
+    const [time, setTime] = useState(false);
 
-    useEffect(() =>{
-        const oneSecond = 1000;
-        setInterval(() => {
-            setTime(moment().format('LTS'))
-        }, oneSecond)
-    })
+    const trueeir = () =>{
+        setTime(true)
+    };
+    const falseier = () =>{
+        setTime(false)
+    }
+    if (time === true){
+        return (<div>
+            <MoscowTimer />
+            <UltraButton onClick={falseier}>Show Montenegro</UltraButton>
+        </div>);
+        } else {
+            return (<div>
+                <MontenegroTimer />
+                <UltraButton onClick={trueeir}>Show Moscow</UltraButton>
+            </div>);
+        };
 
-    return ( <div>
-        <h2 className={classes.moscowStyle} >Moscow Time
-            <br></br>
-            {moscowTime}</h2>
-    </div> );
+        
+
 
 }
  
