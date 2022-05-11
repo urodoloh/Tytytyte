@@ -5,7 +5,7 @@ import classes from './Timer.module.css';
 const MontenegroTimer = () => {
     const montenegroTime = moment().tz("Europe/Podgorica").format("HH:mm:ss z");
 
-    const [time, setTime] = useState({montenegroTime});
+    const [time, setTime] = useState(montenegroTime);
 
 
     useEffect(() =>{
@@ -22,3 +22,5 @@ const MontenegroTimer = () => {
 }
  
 export default MontenegroTimer;
+
+TTime

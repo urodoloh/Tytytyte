@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es6",
+      "jsx": "react",
+      "allowJs": true,
+      "forceConsistentCasingInFileNames": true,
+      "strictNullChecks": false,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "strict": true
+    },
+    "include": [
+      "src",
+      "src/**/*.ts"
+    ]
+  }
+
+
+  // 
+  // "esModuleInterop": true, y
+  // "resolveJsonModule": true, y
+  // "strict": true,
+  // "noEmit": true, X
+
+
+  // "include": [
+  //   "src",
+  //   "webpack",
+  //   "webpack.config.ts",
+  //   "jest.config.ts",
+  //   "declarations.d.ts",
+  // ]
